@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giphy searcher</title>
+</head>
+<body>
+    <form method="POST" action="/search">
+        <table>
+            <tr>
+                <label for="phrase">phrase:</label>
+                <input type="text" id="phrase" name="phrase" value="Pokemon">
+                <br>
+            </tr>
+            <tr><label for="limit">Limit:</label>
+                <select name="limit" id="limit">
+                  <option value="5">5</option>
+                  <option value="10" selected>10</option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                </select>
+                <br>
+            </tr>
+            <tr><label for="rating">Rating:</label>
+                <select name="rating" id="rating">
+                  <option value="g">g</option>
+                  <option value="pg" selected>pg</option>
+                  <option value="pg-13">pg-13</option>
+                  <option value="r">r</option>
+                </select>
+                <br>
+            </tr>
+            <tr><input type="submit" value="Search"></tr>
+        </table>
+    </form>
+    
+</body>
+</html>
